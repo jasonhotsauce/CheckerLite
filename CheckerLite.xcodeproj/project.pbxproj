@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		7F9632551CA2580B0094B172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9632541CA2580B0094B172 /* AppDelegate.swift */; };
 		7F9632571CA2580B0094B172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9632561CA2580B0094B172 /* ViewController.swift */; };
-		7F96325A1CA2580B0094B172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9632581CA2580B0094B172 /* Main.storyboard */; };
 		7F96325C1CA2580B0094B172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F96325B1CA2580B0094B172 /* Assets.xcassets */; };
 		7F96325F1CA2580B0094B172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F96325D1CA2580B0094B172 /* LaunchScreen.storyboard */; };
 		7F96326A1CA2580C0094B172 /* CheckerLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9632691CA2580C0094B172 /* CheckerLiteTests.swift */; };
+		B85B06D01CA25C5D00B9C821 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85B06CF1CA25C5D00B9C821 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		7F9632511CA258090094B172 /* CheckerLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckerLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9632541CA2580B0094B172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9632561CA2580B0094B172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F9632591CA2580B0094B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F96325B1CA2580B0094B172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F96325E1CA2580B0094B172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F9632601CA2580B0094B172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F9632651CA2580C0094B172 /* CheckerLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckerLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9632691CA2580C0094B172 /* CheckerLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerLiteTests.swift; sourceTree = "<group>"; };
 		7F96326B1CA2580C0094B172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B85B06CF1CA25C5D00B9C821 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 		7F9632531CA2580B0094B172 /* CheckerLite */ = {
 			isa = PBXGroup;
 			children = (
+				B85B06CE1CA25C4B00B9C821 /* Views */,
 				7F9632541CA2580B0094B172 /* AppDelegate.swift */,
 				7F9632561CA2580B0094B172 /* ViewController.swift */,
-				7F9632581CA2580B0094B172 /* Main.storyboard */,
 				7F96325B1CA2580B0094B172 /* Assets.xcassets */,
 				7F96325D1CA2580B0094B172 /* LaunchScreen.storyboard */,
 				7F9632601CA2580B0094B172 /* Info.plist */,
@@ -94,6 +94,14 @@
 				7F96326B1CA2580C0094B172 /* Info.plist */,
 			);
 			path = CheckerLiteTests;
+			sourceTree = "<group>";
+		};
+		B85B06CE1CA25C4B00B9C821 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B85B06CF1CA25C5D00B9C821 /* BoardView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +154,7 @@
 				TargetAttributes = {
 					7F9632501CA258090094B172 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8GAQFV89E9;
 					};
 					7F9632641CA2580C0094B172 = {
 						CreatedOnToolsVersion = 7.3;
@@ -179,7 +188,6 @@
 			files = (
 				7F96325F1CA2580B0094B172 /* LaunchScreen.storyboard in Resources */,
 				7F96325C1CA2580B0094B172 /* Assets.xcassets in Resources */,
-				7F96325A1CA2580B0094B172 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85B06D01CA25C5D00B9C821 /* BoardView.swift in Sources */,
 				7F9632571CA2580B0094B172 /* ViewController.swift in Sources */,
 				7F9632551CA2580B0094B172 /* AppDelegate.swift in Sources */,
 			);
@@ -221,14 +230,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7F9632581CA2580B0094B172 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F9632591CA2580B0094B172 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F96325D1CA2580B0094B172 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -329,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CheckerLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonhotsauce.CheckerLite;
@@ -340,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CheckerLite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonhotsauce.CheckerLite;
@@ -390,6 +393,7 @@
 				7F9632701CA2580C0094B172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F9632711CA2580C0094B172 /* Build configuration list for PBXNativeTarget "CheckerLiteTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +402,7 @@
 				7F9632731CA2580C0094B172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
