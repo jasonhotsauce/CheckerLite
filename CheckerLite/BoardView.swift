@@ -11,6 +11,9 @@ import UIKit
 class BoardView: UIView {
     var numOfRows: Int
     var numOfColumns: Int
+    var gridSize: CGFloat {
+        return calculateGridSize(frame.size)
+    }
     
     init(frame: CGRect, numOfRows: Int, numOfColumns: Int) {
         self.numOfRows = numOfRows
@@ -22,12 +25,11 @@ class BoardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func calculateGridSize() -> CGFloat {
-        return  frame.width / 8.0
+    private func calculateGridSize(size: CGSize) -> CGFloat {
+        return  size.width / CGFloat(numOfRows)
     }
     
     override func drawRect(rect: CGRect) {
-        let gridSize = calculateGridSize()
         let context = UIGraphicsGetCurrentContext()
         for row in 0..<numOfRows {
             for column in 0..<numOfColumns {

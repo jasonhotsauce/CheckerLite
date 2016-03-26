@@ -1,0 +1,12 @@
+/* 
+  Localized.strings
+  CheckerLite
+
+  Created by Wenbin Zhang on 3/23/16.
+  Copyright © 2016 Wenbin Zhang. All rights reserved.
+*/
+"invalid_move_alert_title" = "Invalid Move";
+"invalid_move_alert_message" = "You can not move to there";
+"ok" = "OK";
+"game_over" = "Game Over";
+"game_over_message" = "Game Over";
